@@ -1,3 +1,20 @@
+// let nombreIngresado   = prompt("Ingresar nombre");
+// let apellidoIngresado = prompt("Ingresar apellido");
+
+// if((nombreIngresado !="") && (apellidoIngresado !="")){
+//     alert("Nombre: "+nombreIngresado +"\nApellido: "+apellidoIngresado); 
+// }else{
+//     alert("Error: Ingresar nombre y apellido");
+// }
+
+
+
+
+
+
+
+
+
 /* let acumuladorNotas = 0;
 let contadorNotas = 0;
 let nota; 
@@ -31,6 +48,9 @@ console.log(contador) */
 
 
 
+
+
+
 /* Vamos a armar un juego de puntos con dados.
 Tendremos dos participantes a los que se les pedirá el nombre antes de comenzar.
 Cada participante va a tirar dos dados de 6 caras tres veces.
@@ -38,8 +58,8 @@ Donde el mínimo puntaje será: 6 y el máximo 36 en total dependiendo lo que sa
 Ganará quien saque MENOS puntos.
 El programa nos debe avisar qué participante ganó mencionándolo por su nombre. */
 
-let jugador1 = prompt("Ingrese el nombre del jugador 1, por favor")
-let jugador2 = prompt("Ingrese el nombre del jugador 2, por favor")
+let jugador1 = prompt("Por favor, ingrese el nombre del jugador 1")
+let jugador2 = prompt("Por favor, Ingrese el nombre del jugador 2")
 
 contador1 = 0
 contador2 = 0
@@ -50,30 +70,34 @@ puntaje2 = 0
  do {
     dado1 = Math.trunc(Math.random()*6)+1;
     dado2 = Math.trunc(Math.random()*6)+1;
-    console.log("Dado " + contador1 + ": " + (dado1 + dado2));
+    console.log("Tirada " + (contador1+1) + ": " + (dado1 + dado2));
+    console.log(dado1)
+    console.log(dado2)
     contador1++;
     puntaje1 += (dado1 + dado2)
 } while(contador1 < 3)
-console.log(puntaje1)
+console.log(jugador1 + " saco "+ puntaje1 + " puntos")
 do {
     dado3 = Math.trunc(Math.random()*6)+1;
     dado4 = Math.trunc(Math.random()*6)+1;
-    console.log("Dado " + contador2 + ": " + (dado3 + dado4));
+    console.log("Tirada " + (contador2+1) + ": " + (dado3 + dado4));
+    console.log(dado3)
+    console.log(dado4)
     contador2++;
     puntaje2 += (dado3 + dado4)
 } while(contador2 < 3)
-console.log(puntaje2) 
-if  (puntaje1 < puntaje2){
-console.log("Ha ganado: " + jugador1)
-} else if (puntaje1 > puntaje2){
-console.log("Ha ganado: " + jugador2) } 
-else{ console.log("empate")
+console.log(jugador2 + " saco "+ puntaje2 + " puntos") 
 
+if (puntaje1 < puntaje2){
+    console.log("¡Ha ganado: " + jugador1 + " con " + puntaje1 + " puntos!")
+    alert("¡Ha ganado: " + jugador1 + " con " + puntaje1 + " puntos!")
+} else if (puntaje1 > puntaje2){
+    console.log("¡Ha ganado: " + jugador2 + " con " + puntaje2 + " puntos!") 
+    alert("¡Ha ganado: " + jugador2 + " con " + puntaje2 + " puntos!")
+} else {
+    console.log("Empate!!")
+    alert("Empate!!")
 }
 
 
 
-
-
-
- 
