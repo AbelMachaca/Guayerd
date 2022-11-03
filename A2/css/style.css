@@ -1,0 +1,13 @@
+div{
+    width: 400px;
+    height: 400px;
+     margin: 30px 30px;
+    background-color: lightblue;
+    display: inline-block;
+    
+    
+}
+
+body{
+    height: 7000px;
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.cajaImagen{
+    width: 10%;
+    display: inline-block;
+    
+
+}
+
+.contenedor{
+    background-color: grey;
+    
+    height: 190px;
+    
+}
+
+.caja1{
+    background-color: aqua;
+    width: 100px;
+    height: 190px;
+    display: inline-block;
+    
+}
+.caja2{
+    background-color: blueviolet;
+    width: 200px;
+    height: 190px;
+    display: inline-block;
+    position:absolute ;
+    right: 0;
+    
+    
+    
+
+}

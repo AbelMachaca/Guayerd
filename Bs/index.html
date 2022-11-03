@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- Container fluid, row, h1, columna, columna 3 y 6 -->
+    <div class="container-fluid bg-primary text-white">
+        <h1>Hola Mica - Esto es un container</h1>
+        <div class="row bg-secondary">
+            <h2>Hola Mica - Esto es una row</h2>
+            <div class="col-12 text-center bg-warning">
+                Columna de 12 lugares
+            </div>
+            <div class="col-3 text-center bg-danger">
+                Columna de 3 lugares
+            </div>
+            <div class="col-6 text-center bg-success">
+                Columna de 6 lugares
+            </div>
+            <div class="col-3 text-center bg-danger">
+                Columna de 3 lugares
+            </div>
+        </div>
+    </div>
+    <!-- Container, row, h1, col 1-2-3-6 -->
+    <div class="container bg-primary text-white mt-5">
+        <h1>Hola Mica - Esto es un container</h1>
+        <div class="row bg-secondary">
+            <div class="col-1 col-sm-12 col-md-3 col-lg-6 text-center bg-warning">
+                Columna responsive
+            </div>
+        </div>
+    </div>
+<!-- Container, row, col, tabla con breakpoints -->
+    <div class="container bg-primary text-white mt-5 p-0">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-dark table-striped table-hover mb-0">
+                    <thead>
+                      <tr>
+                        <th>Breakpoint</th>
+                        <th>Class infix</th>
+                        <th>Dimensions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>X-Small</td>
+                        <td><em>None</em></td>
+                        <td>&lt;576px</td>
+                      </tr>
+                      <tr>
+                        <td>Small</td>
+                        <td><code>sm</code></td>
+                        <td>≥576px</td>
+                      </tr>
+                      <tr>
+                        <td>Medium</td>
+                        <td><code>md</code></td>
+                        <td>≥768px</td>
+                      </tr>
+                      <tr>
+                        <td>Large</td>
+                        <td><code>lg</code></td>
+                        <td>≥992px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra large</td>
+                        <td><code>xl</code></td>
+                        <td>≥1200px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra extra large</td>
+                        <td><code>xxl</code></td>
+                        <td>≥1400px</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <!-- Container , row,
+        12, sm-6, md-3, lg-12, xl-1, xxl-6
+        12, sm-6, md-3, lg-12, xl-2, xxl-6
+        6, sm-12, md-3, lg-12, xl-5, xxl-6
+        6, sm-12, md-3, lg-12, xl-4, xxl-6
+    -->
+    <div class="container row ">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-1 col-xxl-6 text-center bg-warning mt-5">
+                <h1> Columna 1</h1>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-2 col-xxl-6 text-center bg-warning mt-5">
+                <h2>Columna 2</h2>
+            </div>
+            <div class="col-6 col-sm-12 col-md-3 col-lg-12 col-xl-3 col-xxl-6 text-center bg-warning mt-5">
+               <h3> Columna 3</h3> 
+            </div>
+            <div class="col-6 col-sm-12 col-md-3 col-lg-12 col-xl-4 col-xxl-6 text-center bg-warning mt-5">
+                <h4>columna 4</h4>
+            </div>
+        
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://fotos.perfil.com/2019/10/07/cuales-son-los-autos-mas-potentes-del-mundo-788463.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fotos.perfil.com/2019/10/07/cuales-son-los-autos-mas-potentes-del-mundo-788463.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fotos.perfil.com/2019/10/07/cuales-son-los-autos-mas-potentes-del-mundo-788463.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+        
+      </button>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

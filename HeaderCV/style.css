@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(46, 204, 209);
+    color: white;
+    
+    
+    
+
+}
+
+.ajustar{
+    
+    
+    background-color: aqua;
+    margin: 0 auto;
+   width: 500px;
+    border-style: solid;
+    border-radius: 16px;
+    
+   
+}
+
+
+
+.negro:hover{
+    color: rgb(105, 43, 206);
+    display: block;
+    
+    
+    
+    
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+
+p{
+    margin-left: 10px;
+}
+
+ul{
+    margin-left: 10px;
+}
+
+
+
+.border{
+    width: 500px;
+    display: inline-block;
+    margin: 4% 10%;
+    background-color: red;
+
+    
+   
+    
+
+
+}
+
+/* .boxes{
+    
+} */
+
+.separado{
+
+   
+    width: 10%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+body{
+    height: 7000px;
+}

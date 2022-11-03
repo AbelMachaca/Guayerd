@@ -1,0 +1,36 @@
+.container {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Using only CSS*/
+  
+  
+  #maquina-escribir3 {
+    border-right: 3px solid black;
+    margin: 0;
+    background: #f7dd4a;
+  }
+  
+  .caja {
+    border: 2px solid black;
+    max-width: 200px;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  #maquina-escribir4 {
+    display: inline;
+    border-right: 3px solid black;
+  }
+  
+  .por {
+      text-align: center;
+  }
